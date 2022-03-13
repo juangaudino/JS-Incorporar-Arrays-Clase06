@@ -46,7 +46,6 @@ function solicitarMaterial() {
         alert(`El costo de producción de ${cantidad} ${material} es de $${calcularPrecio(material, cantidad)}`);
         document.write("<h2> Cotización de "+ cantidad +" "+ material +"</h2>");
         document.write("<h4> El costo de producción es de $" + calcularPrecio(material, cantidad,) + "</h4>");
-        // document.write(`El costo de producción de ${cantidad} ${material} es de $${calcularPrecio(material, cantidad)}`);
     }
     else if (material === 'Front' || material === 'Back') {
         ancho = prompt(`Ingrese el ancho del material ${material}`);	
@@ -58,8 +57,6 @@ function solicitarMaterial() {
         alert(`El costo de producción de ${cantidad} ${material} es de $${calcularPrecio(material, cantidad, metrosCuadrados)}`);
         document.write("<h2> Cotización de "+ cantidad +" "+ material +" "+ "de " + ancho + "x" + alto + " metros" +"</h2>");
         document.write("<h4> El costo de producción es de $" + calcularPrecio(material, cantidad, metrosCuadrados) + "</h4>");
-        // document.write(`El costo de producción de ${cantidad} ${material} es de $${calcularPrecio(material, cantidad, metrosCuadrados)}`);
-        
     }
     return material;
 }
